@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:pt="http://xmlns.jcp.org/jsf/passthrough">
+    <h:head>
+        <title>Facelet Title</title>
+        <link rel="StyleSheet" type="text/css" href="css/pagecss.css" media="screen"/>
+    </h:head>
+    <h:body class="background-image">
+
+        <!--Começo do panelGroup que contém o formulário-->
+        <h:panelGroup layout="block" class="content">
+
+            <h1>Drive Fast, Drive Safe.</h1>
+            <hr/>
+            <p class="text">Avoid crime zones with Safe Routz</p>
+
+
+            <h:form>
+
+                <!--Campo de entrada nome do formulário-->
+
+                <h:inputText pt:placeholder="Name" id="name" 
+                             label="Name" required="true" value="#{registrationBean.nome}"><br/><br/>
+
+
+                    <f:validator validatorId="nameValidator"/><br/>
+
+                </h:inputText>
+                <!--Campo de entrada email do formulário-->
+                <h:inputText pt:placeholder="E-mail" id="email" 
+                             label="Email" required="true" value="#{registrationBean.email}">
+
+                    <f:validator validatorId="emailValidator" id="validator"/><!--Validador usado para o email-->
+
+                </h:inputText>
+
+                <!--Botão de envio do formulário-->
+                <h:commandButton id="register" class="register" value="Register" action="confirmation"/>
+               
+                <!--Configuração das mensagens de erro-->
+                <h:panelGroup  class="message">
+                    <br/>
+                    <h:message for="email"/><!--Mensagem a ser exibida em caso de erro-->
+                    <br/>
+                    <h:message for="name"/>
+                    <br/>
+                </h:panelGroup>
+                
+                <div class="footer">
+                    <h5>© Copyright Safe Routz™ 2015. All rights reserved. We hate spam. We promise not to give out any of the information entered onto this site.
+
+</h5>
+                </div>
+
+            </h:form>
+        </h:panelGroup>
+        <!--Fim do panelGroup que contém o formulário-->
+
+    </h:body>
+</html>
+
