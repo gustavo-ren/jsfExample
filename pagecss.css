@@ -1,0 +1,107 @@
+/* 
+    Created on : 17/07/2016, 13:08:45
+    Author     : Gustavo
+*/
+
+/*Definição do estilo da div do formulário*/
+.content {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 3px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    top: 10px;
+    left: 0;
+    position: fixed;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin: auto;
+    right: 0;
+    z-index: 2;
+    padding: 0 10px;
+    width: 100%;
+}
+
+/*Definição do estilo da do corpo da página (Body)*/
+.background-image{
+    background-image: url(transito.jpg);
+}
+
+
+
+/*Definição do estilo do campo de input do formulário*/
+input[type=text], select {
+    width: 40%;
+    padding: 14px 20px;
+    margin: auto;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    float: left;
+}
+
+/*Definição do estilo do botão do formulário*/
+input[type=submit] {
+    width: 18%;
+    background-color: #4B0082;
+    color: white;
+    padding: 14px 20px;
+    margin: auto;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;    
+    float: left;
+}
+
+/*Define a cor do botão ao passar do ponteiro*/
+.register:hover {
+    background-color: #7700cf;
+    color: white;
+}
+
+h1{ 
+    text-align: center ;
+    font-weight: bold ;
+    font-family: arial ;
+    font-size: 35px;
+}
+
+/*Linha que aparece entre o título e o resto dos componentes da página*/
+hr{
+    width: 50%;
+    color: black;
+}
+/*Texto que aparece no paragrafo da página*/
+.text{
+    text-align: center ;
+    font-weight: bold ;
+    font-family: arial ;
+    font-size: 20px;
+}
+
+/*Configuração da mensagem de erro que aparece caso os padrões não sejam satisfeitos*/
+.message{
+    font-weight: bold ;
+    font-family: arial ;
+    font-size: 15px;
+    float: left;
+    position: relative;
+}
+/*Rodapé da página*/
+.footer{
+    position: fixed;
+    bottom: 0px;
+    background-color: #4B0082;
+    width: 100%;
+    color: white;
+    float: left;        
+    font-weight: bold ;
+    font-family: arial ;
+}
+
+.confirmation{
+    text-align: center ;
+    font-weight: bold ;
+    font-family: arial ;
+    font-size: 20px;
+}
